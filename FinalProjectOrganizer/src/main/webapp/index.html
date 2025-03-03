@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Appointment, Task, or Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Dylan's Life "Organizer".</h1>
+    <p>Appointments are events you plan in the long-term, like doctors visits, work meetings, and things like that!</p>
+    <p>Tasks are things you do in the short-term, like taking the dog out for a walk or hitting the gym!</p>
+    <p>Utilizing Java, MySQL, Tomcat, HTML, this webpage is a user-friendly way to manage all your life's appointments and tasks.</p>
+    <p>Just enter your appointment or task down below and it will be saved to the Database forever!</p>
+    <p>Just make sure to remember the ID and you'll be able to find all your saved tasks and appointments in the searches below!</p>
+    <p>This tool can be used for all kinds of storage so use it anyway that's most convenient for you!</p>
+    
+    <h2>Create Appointment</h2>
+
+    <!--Form to submit a new appointment to backend-->
+    <form action="CreateAppointmentServlet" method="POST">
+        <label for="appointmentId">Appointment ID:</label>
+        <input type="text" id="appointmentId" name="appointmentId" required><br>
+        <label for="appointmentDate">Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required><br>
+        <label for="appointmentDescription">Description:</label>
+        <input type="text" id="appointmentDescription" name="description" required><br>
+        <input type="submit" value="Create Appointment">
+    </form>
+
+    <!--Form to submit new task to backend-->>
+    <h2>Create Task</h2>
+    <form action="CreateTaskServlet" method="POST">
+        <label for="taskId">Task ID:</label>
+        <input type="text" id="taskId" name="taskId" required><br>
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName" name="name" required><br>
+        <label for="taskDescription">Description:</label>
+        <input type="text" id="taskDescription" name="description" required><br>
+        <input type="submit" value="Create Task">
+    </form>
+
+    <h2>Search Database for Appointments or Tasks</h2>
+    <form action="search.html">
+        <input type="submit" value="Search Appointments">
+    </form>    
+    <form action="search_task.html">
+        <input type="submit" value="Search Tasks">
+    </form>    
+</body>
+</html>

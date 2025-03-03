@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Appointment</title>
+    <script>
+        function searchAppointment() {
+            // get user input
+            const appointmentId = document.getElementById("appointmentId").value;
+            //validate input
+            if (!appointmentId) {
+                alert("Please enter an appointment ID.");
+                return;
+            }
+
+            // Send a GET request to the servlet with the appointment ID as a parameter
+            fetch(`SearchAppointmentServlet?appointmentId=${appointmentId}`)
+                .then(response => response.json())
+                .then(data => {
+                    let resultDiv = document.getElementById("result");
+                    if (data && data.appointmentId) {
+                        resultDiv.innerHTML = `
+                            <h3>Appointment Details</h3>
+                            <p><strong>ID:</strong> ${data.appointmentId}</p>
+                            <p><strong>Date:</strong> ${data.appointmentDate}</p>
+                            <p><strong>Description:</strong> ${data.description}</p>
+                        `;
+                    } else {
+                        resultDiv.innerHTML = "<p>No appointment found.</p>";
+                    }
+                })
+                .catch(error => {
+                    console.error("Error fetching appointment:", error);
+                    document.getElementById("result").innerHTML = "<p>Error retrieving appointment.</p>";
+                });
+        }
+
+        // Javascript function to fetch appointment details
+    </script>
+</head>
+<body>
+    <h1>Search for an Appointment</h1>
+    <label for="appointmentId">Enter Appointment ID:</label>
+    <input type="text" id="appointmentId" required>
+    <button onclick="searchAppointment()">Search</button>
+
+    <div id="result"></div>
+</body>
+</html>

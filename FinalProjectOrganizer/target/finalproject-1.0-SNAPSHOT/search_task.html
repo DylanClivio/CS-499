@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Task</title>
+    <script>
+        function searchTask() {
+            const taskId = document.getElementById("taskId").value;
+            if (!taskId) {
+                alert("Please enter a task ID.");
+                return;
+            }
+
+            fetch(`SearchTaskServlet?taskId=${taskId}`)
+                .then(response => response.json())
+                .then(data => {
+                    let resultDiv = document.getElementById("result");
+                    if (data && data.taskId) {
+                        resultDiv.innerHTML = `
+                            <h3>Task Details</h3>
+                            <p><strong>ID:</strong> ${data.taskId}</p>
+                            <p><strong>Name:</strong> ${data.taskName}</p>
+                            <p><strong>Description:</strong> ${data.description}</p>
+                        `;
+                    } else {
+                        resultDiv.innerHTML = "<p>No task found.</p>";
+                    }
+                })
+                .catch(error => {
+                    console.error("Error fetching task:", error);
+                    document.getElementById("result").innerHTML = "<p>Error retrieving task.</p>";
+                });
+        }
+
+        // Javascript to fetch task details
+    </script>
+</head>
+<body>
+    <h1>Search for a Task</h1>
+    <label for="taskId">Enter Task ID:</label>
+    <input type="text" id="taskId" required>
+    <button onclick="searchTask()">Search</button>
+
+    <div id="result"></div>
+</body>
+</html>
