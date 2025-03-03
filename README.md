@@ -1,1 +1,28 @@
-# CS-499
+Professional Self-Assessment
+Hello! My name is Dylan Clivio, and this ePortfolio explores the skills I have developed during my time at Southern New Hampshire University while completing my bachelor's degree in Computer Science.
+
+I started building computers at a young age in middle school with my older brother. My passion for technology branched out to many different hobbies and passions. I enrolled in Southern New Hampshire’s Computer Science program so that I could equip myself with a more well-rounded understanding of computers. During my time at SNHU, I got a job working with Large Language Models engineering prompts to train some of the most cutting-edge artificial intelligence projects. I also picked up my biggest passion so far, astrophotography.
+
+The most valuable lessons I have learned at SNHU are the industry best practices necessary to navigate the software development life cycle effectively and reliably deliver projects to customers. My coursework reinforced the importance of organization, thorough testing, and adaptability when encountering complex programming challenges. Throughout my academic journey, I have had the opportunity to work with various programming languages, tools, and frameworks, strengthening my ability to think critically and design robust solutions.
+
+One of the aspects I appreciated most about the Computer Science program was the exposure to different fields within the discipline. From physics and machine learning to embedded software engineering and automation, SNHU has broadened my technical perspective. This exposure has solidified my confidence in tackling unfamiliar technologies and adapting to new industry demands.
+
+Collaborating in a team environment: A key takeaway from my academic journey has been the value of collaboration. Some of my most enriching experiences involved working alongside peers who specialized in different areas of computer science. Whether it was debugging code, designing algorithms, or optimizing software performance, brainstorming solutions with others often led to a deeper understanding of the subject. I have learned that no one can know everything about a programming language or framework, and seeking input from others is invaluable when tackling challenges.
+
+Communicating with stakeholders: My work with Scale AI has further reinforced the importance of collaboration and clear communication. Regular team meetings, discussions with project leads, and guiding colleagues in prompt engineering have strengthened my ability to articulate technical concepts effectively. In a fast-paced environment where customer requirements constantly evolve, I have honed my ability to prioritize stakeholder expectations and ensure deliverables meet high standards.
+
+Data structures and algorithms: Data structures and algorithms are what enable engineers to problem-solve in computer science. Throughout my coursework, I worked on optimizing code efficiency and scope, designing data structures, and thinking wholistically for performance-critical applications. My experience with algorithmic thinking allows me to write efficient and scalable code.
+
+Software engineering and database: During my time at SNHU, I worked on full-stack applications, implementing backend logic, designing databases, and integrating user interfaces. My understanding of relational databases, particularly MySQL, has enabled me to create efficient data storage and retrieval systems. I also gained experience in API development, microservices, and cloud-based solutions.
+
+Security: My coursework covered key security principles such as encryption, authentication, and secure coding practices. I have implemented security and security automation in a number of projects to gain a deep understanding of this crucial aspect of computer science.
+
+So in conclusion, My time at SNHU has led me on a path of being well-rounded and ready to tackle the latest advancements in computer science technology. I am just as passionate about computers now as I was when I was a young kid and I continue to pursue expanding what I know so that I can contribute to the innovation and creativity of tomorrow.
+
+My computer Science Capstone For SNHU: My goal for this project was to take a project made at the beginning of my program and revamp it with additional features that show proficiency in full-stack engineering. First, what I started with was rough. The project was designed to practice JUnit 5 testing, a form of security automation. The project lacked any structure and was not formatted correctly or even functional at first! My first goal was to restructure the program and get it running. The project focused on collecting information for appointment-making, Task planning, and contacts. The theory was that this could represent logic used by a company to manage its clients. The goal was to then incorporate JUnit testing and expand its code coverage.
+
+Once I got the project running it showed impressive code coverage and had excellent potential to be integrated into a real business. The problem was it completely lacked any capability to do so. The information entered was stored on hashmaps and would therefore be deleted immediately as the program was turned off. There was also no user interface to easily enter information.
+
+My goal was to do a complete overhaul and make this project into something I could use to help manage my own calendar. I may not be a business, but perhaps I could use this project to help me organize my appointments and tasks!
+
+First, I reorganized and updated the code to make it functional again. I then incorporate a MySQL database to store any information regarding appointments and tasks. Lastly, I incorporate TomCat servlets to create a simple, intuitive user-friendly interface to enter and search through the database with appointments and tasks to create my own schedule organizer.
