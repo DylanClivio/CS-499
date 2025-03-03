@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f7f0da; /* Slightly off-white background */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 2px solid #ccc;
+        }
+        img {
+            width: 80%;
+            max-width: 600px;
+        }
+        video {
+            width: 80%;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dylan Clivio's ePortfolio / cs499 Capstone</h1>
+        <div class="section" id="professional-summary">
+            <h2>Professional Self-Assessment</h2>
+            <p>Hello! My name is Dylan Clivio, and this ePortfolio explores the skills I have developed during my time at Southern New Hampshire University while completing my bachelor's degree in Computer Science.</p>
+            <p>I started building computers at a young age in middle school with my older brother. My passion for technology branched out to many different hobbies and passions. I enrolled in Southern New Hampshire’s Computer Science program so that I could equip myself with a more well-rounded understanding of computers. During my time at SNHU, I got a job working with Large Language Models engineering prompts to train some of the most cutting-edge artificial intelligence projects. I also picked up my biggest passion so far, astrophotography.</p>
+            <p>The most valuable lessons I have learned at SNHU are the industry best practices necessary to navigate the software development life cycle effectively and reliably deliver projects to customers. My coursework reinforced the importance of organization, thorough testing, and adaptability when encountering complex programming challenges. Throughout my academic journey, I have had the opportunity to work with various programming languages, tools, and frameworks, strengthening my ability to think critically and design robust solutions.</p>
+            <p>One of the aspects I appreciated most about the Computer Science program was the exposure to different fields within the discipline. From physics and machine learning to embedded software engineering and automation, SNHU has broadened my technical perspective. This exposure has solidified my confidence in tackling unfamiliar technologies and adapting to new industry demands.</p>
+            <p><strong>Collaborating in a team environment:</strong>
+
+                A key takeaway from my academic journey has been the value of collaboration. Some of my most enriching experiences involved working alongside peers who specialized in different areas of computer science. Whether it was debugging code, designing algorithms, or optimizing software performance, brainstorming solutions with others often led to a deeper understanding of the subject. I have learned that no one can know everything about a programming language or framework, and seeking input from others is invaluable when tackling challenges.
+                </p>
+            <p><strong>Communicating with stakeholders:</strong>
+
+                My work with Scale AI has further reinforced the importance of collaboration and clear communication. Regular team meetings, discussions with project leads, and guiding colleagues in prompt engineering have strengthened my ability to articulate technical concepts effectively. In a fast-paced environment where customer requirements constantly evolve, I have honed my ability to prioritize stakeholder expectations and ensure deliverables meet high standards.
+                </p>
+            <p><strong>Data structures and algorithms:</strong>
+
+                Data structures and algorithms are what enable engineers to problem-solve in computer science. Throughout my coursework, I worked on optimizing code efficiency and scope, designing data structures, and thinking wholistically for performance-critical applications. My experience with algorithmic thinking allows me to write efficient and scalable code.
+                </p>
+            <p><strong>Software engineering and database:</strong>
+
+                During my time at SNHU, I worked on full-stack applications, implementing backend logic, designing databases, and integrating user interfaces. My understanding of relational databases, particularly MySQL, has enabled me to create efficient data storage and retrieval systems. I also gained experience in API development, microservices, and cloud-based solutions.
+                </p>
+            <p><strong>Security:</strong>
+
+                My coursework covered key security principles such as encryption, authentication, and secure coding practices. I have implemented security and security automation in a number of projects to gain a deep understanding of this crucial aspect of computer science.
+                </p>
+            <p>So in conclusion, My time at SNHU has led me on a path of being well-rounded and ready to tackle the latest advancements in computer science technology. I am just as passionate about computers now as I was when I was a young kid and I continue to pursue expanding what I know so that I can contribute to the innovation and creativity of tomorrow.</p>
+            <p><strong>My computer Science Capstone For SNHU:</strong>
+
+                My goal for this project was to take a project made at the beginning of my program and revamp it with additional features that show proficiency in full-stack engineering.
+                
+                First, what I started with was rough. The project was designed to practice JUnit 5 testing, a form of security automation. The project lacked any structure and was not formatted correctly or even functional at first!
+                
+                My first goal was to restructure the program and get it running. The project focused on collecting information for appointment-making, Task planning, and contacts. The theory was that this could represent logic used by a company to manage its clients. The goal was to then incorporate JUnit testing and expand its code coverage.
+                </p>
+            <p>Once I got the project running it showed impressive code coverage and had excellent potential to be integrated into a real business. The problem was it completely lacked any capability to do so. The information entered was stored on hashmaps and would therefore be deleted immediately as the program was turned off. There was also no user interface to easily enter information.</p>
+            <p>My goal was to do a complete overhaul and make this project into something I could use to help manage my own calendar. I may not be a business, but perhaps I could use this project to help me organize my appointments and tasks!</p>
+            <p>First, I reorganized and updated the code to make it functional again. I then incorporate a MySQL database to store any information regarding appointments and tasks. Lastly, I incorporate TomCat servlets to create a simple, intuitive user-friendly interface to enter and search through the database with appointments and tasks to create my own schedule organizer.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="section" id="code-review">
+            <h2>Initial Code Review</h2>
+            <video controls>
+                <source src="Code Review.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="section" id="software-design">
+            <h2>Software Design & Engineering</h2>
+            <img src="Screenshot 2025-03-03 031138.png" alt="Software Design Screenshot">
+            <p>My original project was taken from my CS320 course on software testing, automation, and quality assurance. The project was meant to show proficiency in a JUnit testing framework and lacked a lot of structure that a typical Java project would have. The project did not work at all when I downloaded the original files from my GitHub repository. The software being used was slightly out of date. The first improvement made to the project was a restructuring of the directories. This update makes the project structure follow industry best practices for Java projects, isolates testing from the rest of the project, and helps to stay organized during continual updates. </p>
+            <p>I updated the pom.xml and implemented JaCoCo. Because this project was created for JUnit testing, I used JaCoCo, a Java library that measures code coverage. Once the updated project was working, JaCoCo created an index.html with the following results:</p>
+            <img src="Screenshot 2025-02-02 170551.png" alt="Databases Screenshot">
+            <p>updated Jacoco</p>
+            <img src="Screenshot 2025-02-09 230310.png" alt="Databases Screenshot">
+            <p>I wasn’t very familiar with how functional interfaces work and had to learn a lot about how they can be implemented into code to improve code redundancy. I am still unsure how much I will have to change my code when I incorporate MySQL but I suspect significant changes will have to be made with the way data is moved and stored within my program.</p>
+            <p>Lastly, comments were added throughout the Java classes to provide a brief summary of their purpose.</p>
+            <p>While these initial improvements may not be particularly in-depth, they do create a great foundation for further improvements like removing the hashmaps, incorporating interfaces, MySQL, Loops, and more. They also incorporate fundamental aspects of software design and engineering to fix/improve my previous project.</p>
+        </div>
+        <div class="section" id="algorithms">
+            <h2>Algorithms and Data Structure</h2>
+            <img src="Screenshot 2025-03-03 031329.png" alt="Algorithms Screenshot">
+            <p>I made updates to my AppointmentService.java, ContactService.java, and TaskService.java in order to improve the algorithms and data structure of my code.</p>
+            <p>First, we’ll look at AppointmentService.java. My goal was to incorporate bulk operations to make the program scalable. I created “addAppointments” and “deleteAppointments”. This allows for better manipulation of multiple appointments at once. </p>
+            <p>addAppointment returns a boolean. This should improve error handling because this boolean represents the success or failure of the operation. Lastly, I created a “getAllAppointments” method that will print out a full list of the appointments</p>
+            <p>Next, we can look at TaskService.java.
+                I improved the “getTask” method to include returning an optional task. This should make null handling more safe.
+                </p>
+            <p>I used a functional interface “TaskUpdater” to reduce code duplication. This should also make it easier to incorporate future improvements. Lastly,  I updated the “deleteTask” method by simplifying its logic</p>
+            <p>I believe these updates were thoughtful and challenging to incorporate. These updates not only provide the program with more capabilities and make it more efficient for the user but also make the code cleaner with a better potential for future improvements. </p>
+            <p>A lot of these improvements came about as I was researching for this module and I hadn’t originally planned on them. I knew from the beginning I wanted to incorporate bulk operations.</p>
+        </div>
+        <div class="section" id="databases">
+            <h2>Databases</h2>
+            <img src="Screenshot 2025-03-03 011416.png" alt="Databases Screenshot">
+            <p>I have implemented a MySQL database to replace the hashmaps present in the original project.
+            </p>
+            <p>The hashmaps incorporated into the original project are not compatible with a real-life use scenario because they lose all their memory every time the program closes. Incorporating MySQL will preserve the information and also provide better scalability and allow a user to find patterns in data.</p>
+            <p>this mySQL database contributes significantly to this project and completely changes its usability, scalability, and efficiency.</p>
+            <p>I learned how to connect MySQL to my Java project and TomCat server. A challenge I faced was understanding how the server would interact with the database. After entering information, the database would give a 404 error, not because anything was broken but because I simply didn’t add a step for the program to return to the original webpage or give a success notification after uploading to the database.</p>
+        </div>
+        <div class="section" id="github-link">
+            <h2>Final Code GitHub Link</h2>
+            <img src="Screenshot 2025-03-03 032159.png" alt="GitHub Screenshot">
+            <p>All that was left to do was create a simple interface using HTML and CSS so that users could more easily make use of the database.</p>
+            <p>And Voila! A full-stack web application! So much better than where we started with some broken code.</p>
+            <p><a href="https://github.com/DylanClivio/CS-499.git" target="_blank">View Final Code on GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>
